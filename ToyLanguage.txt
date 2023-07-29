@@ -1,0 +1,25 @@
+Package ToyLanguage;
+
+Helpers
+	letter = [['a'..'z'] + ['A'..'Z']];
+	natural = ['1'..'9'];
+	whole = ['0' + natural];
+	other = ' '| 13 | 10;
+	//one is tab, one is return line
+	
+Tokens
+	plus = '+';
+	mult = '*';
+	assign = ':=';
+	eol = ';';
+	
+	integer = '0' | natural (whole)*
+	id = letter+;
+	comment = '//'([[0..0xffff] - [10 + 13])*;
+	blank = other+;
+	
+Ignored Tokens
+	blank, comment;
+	
+Productions
+	prog = eol;

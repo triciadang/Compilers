@@ -1,0 +1,3 @@
+None other than the help received from Lt Col Graham.
+
+Tests are located in /../bin/debug folder

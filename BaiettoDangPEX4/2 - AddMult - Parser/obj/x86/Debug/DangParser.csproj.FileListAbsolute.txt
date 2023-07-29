@@ -1,0 +1,32 @@
+C:\Users\C20Tricia.Dang\OneDrive - usafa.edu\C1C\Compilers\2 - AddMult - Parser\2 - AddMult - Parser\obj\x86\Debug\DangParser.csprojAssemblyReference.cache
+C:\Users\C20Tricia.Dang\OneDrive - usafa.edu\C1C\Compilers\2 - AddMult - Parser\2 - AddMult - Parser\obj\x86\Debug\DangParser.csproj.CoreCompileInputs.cache
+C:\Users\C20Tricia.Dang\OneDrive - usafa.edu\C1C\Compilers\2 - AddMult - Parser\2 - AddMult - Parser\obj\x86\Debug\ConsoleApplication.exe
+C:\Users\C20Tricia.Dang\OneDrive - usafa.edu\C1C\Compilers\2 - AddMult - Parser\2 - AddMult - Parser\obj\x86\Debug\ConsoleApplication.pdb
+C:\Users\C20Tricia.Dang\OneDrive - usafa.edu\C1C\Compilers\2 - AddMult - Parser\2 - AddMult - Parser\bin\Debug\ConsoleApplication.exe
+C:\Users\C20Tricia.Dang\OneDrive - usafa.edu\C1C\Compilers\2 - AddMult - Parser\2 - AddMult - Parser\bin\Debug\ConsoleApplication.pdb
+C:\Users\C20Tricia.Dang\OneDrive - usafa.edu\C1C\Compilers\2 - AddMult - Parser\2 - AddMult - Parser\2 - AddMult - Parser\bin\Debug\ConsoleApplication.exe
+C:\Users\C20Tricia.Dang\OneDrive - usafa.edu\C1C\Compilers\2 - AddMult - Parser\2 - AddMult - Parser\2 - AddMult - Parser\bin\Debug\ConsoleApplication.pdb
+C:\Users\C20Tricia.Dang\OneDrive - usafa.edu\C1C\Compilers\2 - AddMult - Parser\2 - AddMult - Parser\2 - AddMult - Parser\obj\x86\Debug\DangParser.csprojAssemblyReference.cache
+C:\Users\C20Tricia.Dang\OneDrive - usafa.edu\C1C\Compilers\2 - AddMult - Parser\2 - AddMult - Parser\2 - AddMult - Parser\obj\x86\Debug\ConsoleApplication.exe
+C:\Users\C20Tricia.Dang\OneDrive - usafa.edu\C1C\Compilers\2 - AddMult - Parser\2 - AddMult - Parser\2 - AddMult - Parser\obj\x86\Debug\ConsoleApplication.pdb
+C:\Users\C20Tricia.Dang\Documents\Compilers\2 - AddMult - Parser - Fixed\2 - AddMult - Parser\2 - AddMult - Parser\2 - AddMult - Parser\bin\Debug\ConsoleApplication.exe
+C:\Users\C20Tricia.Dang\Documents\Compilers\2 - AddMult - Parser - Fixed\2 - AddMult - Parser\2 - AddMult - Parser\2 - AddMult - Parser\bin\Debug\ConsoleApplication.pdb
+C:\Users\C20Tricia.Dang\Documents\Compilers\2 - AddMult - Parser - Fixed\2 - AddMult - Parser\2 - AddMult - Parser\2 - AddMult - Parser\obj\x86\Debug\DangParser.csprojAssemblyReference.cache
+C:\Users\C20Tricia.Dang\Documents\Compilers\2 - AddMult - Parser - Fixed\2 - AddMult - Parser\2 - AddMult - Parser\2 - AddMult - Parser\obj\x86\Debug\ConsoleApplication.exe
+C:\Users\C20Tricia.Dang\Documents\Compilers\2 - AddMult - Parser - Fixed\2 - AddMult - Parser\2 - AddMult - Parser\2 - AddMult - Parser\obj\x86\Debug\ConsoleApplication.pdb
+C:\Users\C20Tricia.Dang\Documents\Compilers\2 - AddMult - Parser\2 - AddMult - Parser\bin\Debug\ConsoleApplication.exe
+C:\Users\C20Tricia.Dang\Documents\Compilers\2 - AddMult - Parser\2 - AddMult - Parser\bin\Debug\ConsoleApplication.pdb
+C:\Users\C20Tricia.Dang\Documents\Compilers\2 - AddMult - Parser\2 - AddMult - Parser\obj\x86\Debug\DangParser.csprojAssemblyReference.cache
+C:\Users\C20Tricia.Dang\Documents\Compilers\2 - AddMult - Parser\2 - AddMult - Parser\obj\x86\Debug\ConsoleApplication.exe
+C:\Users\C20Tricia.Dang\Documents\Compilers\2 - AddMult - Parser\2 - AddMult - Parser\obj\x86\Debug\ConsoleApplication.pdb
+C:\Users\C20Nicholas.Baietto\OneDrive - usafa.edu\Documents\Academics\1 dig fall\CS 426 - Compilers\PEX3\2 - AddMult - Parser\bin\Debug\ConsoleApplication.exe
+C:\Users\C20Nicholas.Baietto\OneDrive - usafa.edu\Documents\Academics\1 dig fall\CS 426 - Compilers\PEX3\2 - AddMult - Parser\bin\Debug\ConsoleApplication.pdb
+C:\Users\C20Nicholas.Baietto\OneDrive - usafa.edu\Documents\Academics\1 dig fall\CS 426 - Compilers\PEX3\2 - AddMult - Parser\obj\x86\Debug\DangParser.csprojAssemblyReference.cache
+C:\Users\C20Nicholas.Baietto\OneDrive - usafa.edu\Documents\Academics\1 dig fall\CS 426 - Compilers\PEX3\2 - AddMult - Parser\obj\x86\Debug\DangParser.csproj.CoreCompileInputs.cache
+C:\Users\C20Nicholas.Baietto\OneDrive - usafa.edu\Documents\Academics\1 dig fall\CS 426 - Compilers\PEX3\2 - AddMult - Parser\obj\x86\Debug\ConsoleApplication.exe
+C:\Users\C20Nicholas.Baietto\OneDrive - usafa.edu\Documents\Academics\1 dig fall\CS 426 - Compilers\PEX3\2 - AddMult - Parser\obj\x86\Debug\ConsoleApplication.pdb
+C:\Users\C20Tricia.Dang\Documents\CompletedPEX3\2 - AddMult - Parser\bin\Debug\ConsoleApplication.exe
+C:\Users\C20Tricia.Dang\Documents\CompletedPEX3\2 - AddMult - Parser\bin\Debug\ConsoleApplication.pdb
+C:\Users\C20Tricia.Dang\Documents\CompletedPEX3\2 - AddMult - Parser\obj\x86\Debug\DangParser.csprojAssemblyReference.cache
+C:\Users\C20Tricia.Dang\Documents\CompletedPEX3\2 - AddMult - Parser\obj\x86\Debug\ConsoleApplication.exe
+C:\Users\C20Tricia.Dang\Documents\CompletedPEX3\2 - AddMult - Parser\obj\x86\Debug\ConsoleApplication.pdb

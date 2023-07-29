@@ -1,0 +1,106 @@
+in SemanticAnalzer.cs
+
+//print out grammar
+//highlight everthing has tpechecking and declaration before used
+
+public override void outAplusExpr(AplusExpr node)
+
+Definition lhs, rhs;
+if (!(underscoredecoratedparsetree.trGetValue(node.GetExpr(),out lhs)))
+openbracke
+//throw error
+Console.Writeline(node.toSring() + "is no valid");
+return;
+close bracket
+
+if(!(decoraedparseree.rgevalue(node.geexpr2(),out rhs)))
+openbracket
+//throw error
+closebracket
+
+if(!lsh.name.Equals(rhs.name)))
+openbracket
+//thrwo error
+Console.WriteLine(node.toSring() + "is not valid");
+return; 
+close bracket
+
+if !((lhs.name.Equals("float") || lhs.name.Equals("int")) )
+openbracket
+//throw and error
+closebracket
+
+Basictpe currtpe;
+currtpe.name=rhs.name;
+
+underscoredecoraedparsetree.Add(node (this is the top node),currtpe)
+
+public ovverride outAVariableOperand(AVariableOperand node)
+openbracket
+//make sure that the id is declared
+Definiion idDef;
+if (!(_currentSmboltable.trgevalue(node.getID().text, out idDef;)))
+openbracke
+//hrow error
+closebracket
+
+//make sure that it is not a tpe
+
+if(!(idDef.Gettpe is VariableDefinition))
+openbracket
+//hrow error
+closebracket
+
+Basictpe currtpe = new Basictpe();
+currtpe.name=idDef.name;
+_decoratedParsetree.Add(node,idDef);
+
+
+
+public override void OutADeclarestmt(ADeclarestmt node)
+openbracket
+
+//check if tpe is valid
+tpedefinition tpeDef;
+
+if (!(_currentSmboltable.trGetValue(node.gettpe().text, out tpeDef))
+openbracke
+//hrow error
+closebracket
+
+if (!(tpeDef is tpeDef))
+openbracke
+//throw error
+closebracket
+
+if (_currentSmboltable.trgevalue(no varDef))de.GetVarnmae().ex, out varDef))
+openbracke
+hrow error
+closebracket
+
+//inser into smbol table
+varDef = new VariableDefinition();
+varDef.name = node.Gettpeid().tex;
+_currentSmboltable.Add(varDef.name, varDef);
+
+
+//check if variable name has been used (in curren st,global st)
+
+//insert into the st
+closebracket
+
+public override void InAprog(Aprog node)
+openbracket
+
+_currentSmboltable = new Dictionar<string,Definition>();
+Basictpe intdef = new Basictpe();
+intDef.name = "in";
+_currentSmboltable.Add("in",inDef);
+
+//gotta do int, string, bool(dont declare, just for if statements) , float
+
+closebracket
+
+
+
+

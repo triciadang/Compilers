@@ -1,0 +1,14 @@
+subprogram(){
+	put_string("in subprogram 1");
+}
+
+main() {
+	int x;
+	x := 5 + 5;
+	
+	put_string("xIsLoadedWith ");
+	put_int(x);
+	new_line();
+	subprogram();
+
+}

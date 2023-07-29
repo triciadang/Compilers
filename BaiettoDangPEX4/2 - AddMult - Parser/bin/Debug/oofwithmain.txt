@@ -1,0 +1,123 @@
+subprogram_uno(){
+	int a;
+	a:=71;
+	if (a <= 100){
+		a := a - 2;
+		put_string("a should be 69: ");
+		put_int(a);
+	}
+}
+
+subprogram_dos(){
+	put_string(" oof");
+}
+
+main(){
+	string answer;
+	string vara;
+	string varb;
+	string varc;
+	float a;
+	a:=42.0;
+	put_string("a should be 42: ");
+	put_float(a);
+	put_string("big oof");
+	vara:="Documentation: Hitchhikers's guide";
+	new_line();
+	varb:=" to the galaxy";
+	put_string(vara);
+	put_string(varb);
+	new_line();
+	
+	if (a==42.0){
+		answer:="correct";
+		
+	}
+	else {
+		answer:="nein, try again";
+	}
+	put_string(answer);
+	new_line();
+	
+	varc := "pink fluffy unicorns";
+	while (answer=="correct"){
+		string sing;
+		sing := "na na na c'mon";
+		put_string("sing is: ");
+		put_string(sing);
+		new_line();
+		answer := "correcto";
+	}
+	
+	put_string(answer);
+	new_line();
+	
+	subprogram_uno();
+	
+	if (a<=100.0){
+		a := a - 2.0;
+		put_string("a should be 40.0: ");
+		put_float(a);
+	}
+	
+	
+	
+	while ((a > 0.0) && (a<100.0)){
+		varc:="dancing on rainbows";
+		new_line();
+		put_string("pink fluffy unicorns ");
+		put_string(varc);
+		subprogram_dos();
+		new_line();
+		a := a - 10.0;
+		put_string("a should go down by 10: ");
+		put_float(a);
+	}
+	
+	if (a >= 0.0){
+		string sing;
+		sing:= "la la la";
+		a := a + 1.0;
+		put_string("a should be 1.0: ");
+		put_float(a);
+		new_line();
+	}
+	new_line();
+
+	if (a < 0.0){
+		a := a + 1.0;
+		put_string("nothing should print");
+		new_line();
+	}
+	else{
+		put_string("a should still be 1: ");
+		put_float(a);
+		a := a + 2.0;
+		put_string("a should be 3.0: ");
+		put_float(a);
+		int b;
+		b:=5;
+		put_int(b);
+		new_line();
+		while (b>1){
+			b:=b-1;
+			put_int(b);
+			new_line();
+		}
+		put_string("Blast off!");
+		new_line();
+	}
+
+	float u;
+	u := -6.2*7.0;
+	put_string("u should be -43.4: ");
+	put_float(u);
+	u := -6.3;
+	put_string("u should be -6.3: ");
+	put_float(u);
+	int nick;
+	nick := 5*4-6/2+3;
+	put_string("nick should be bob(20): ");
+	put_int(nick);
+	
+}

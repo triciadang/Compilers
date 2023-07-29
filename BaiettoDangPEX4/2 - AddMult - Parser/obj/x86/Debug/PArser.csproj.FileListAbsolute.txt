@@ -1,0 +1,6 @@
+C:\Users\paul.graham\usafa.edu\DFCS - Documents\01 Courses\CS426\CS426 - 19 Fall\003 - Assignments\2 - AddMult - Parser\bin\Debug\ConsoleApplication.exe
+C:\Users\paul.graham\usafa.edu\DFCS - Documents\01 Courses\CS426\CS426 - 19 Fall\003 - Assignments\2 - AddMult - Parser\bin\Debug\ConsoleApplication.pdb
+C:\Users\paul.graham\usafa.edu\DFCS - Documents\01 Courses\CS426\CS426 - 19 Fall\003 - Assignments\2 - AddMult - Parser\obj\x86\Debug\PArser.csprojAssemblyReference.cache
+C:\Users\paul.graham\usafa.edu\DFCS - Documents\01 Courses\CS426\CS426 - 19 Fall\003 - Assignments\2 - AddMult - Parser\obj\x86\Debug\PArser.csproj.CoreCompileInputs.cache
+C:\Users\paul.graham\usafa.edu\DFCS - Documents\01 Courses\CS426\CS426 - 19 Fall\003 - Assignments\2 - AddMult - Parser\obj\x86\Debug\ConsoleApplication.exe
+C:\Users\paul.graham\usafa.edu\DFCS - Documents\01 Courses\CS426\CS426 - 19 Fall\003 - Assignments\2 - AddMult - Parser\obj\x86\Debug\ConsoleApplication.pdb
