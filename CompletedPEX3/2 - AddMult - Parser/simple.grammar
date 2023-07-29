@@ -1,0 +1,144 @@
+// This is the language that we'll be developing as an example in class.
+Package ToyLanguage;
+
+Helpers
+	other = ' ' | 13 | 10 | 9;
+	natural = ['1' .. '9'];
+	whole = ['0' + natural];
+	letter = [['a' .. 'z'] + ['A' .. 'Z']];
+
+Tokens
+	// Operators and EOL
+	assign = ':=';
+	plus = '+';
+	mult = '*';	
+	minus = '-';
+	divide = '/';
+	exponential = '^';
+	
+	// Comparative Operators
+	equal = '==';
+	greater_equal = '>=';
+	less_equal = '<=';
+	greater = '>';
+	less = '<';
+	
+	// Logical Operators
+	and = '&&';
+	or = '||';
+	not = '!';
+
+	constant = 'const';
+	if = 'if';
+	else = 'else';
+	while = 'while';
+	void = 'void';
+	lparen = '(';
+	rparen = ')';
+	comma = ',';
+	openbracket = '{';
+	closebracket = '}';
+	
+	main = 'main';
+	
+
+	eol = ';';
+
+	// Variable Names
+	id = ((letter+)(('_')(letter+))*)*('_'?);
+	comment = '//' ([[0 .. 0xffff] - [10 + 13]])*;	
+	
+	// Literals
+	integer = '0' | natural (whole)*;
+	float = ('0'?)('.')(whole)*(('e'|'E')('-'?)(natural)(whole)*)?|
+	(natural)(whole)* (('.')(whole)+)?(('e'|'E')('-'?)(natural)(whole)*)?;
+	string = ('"')(([[0 .. 0xffff] - 34])*('\"')*)* ('"');
+	boolean = 'true' | 'false';
+	
+	// Whitespace
+	blank = other+;
+	
+Ignored Tokens
+	blank, comment;
+
+Productions
+
+ prog = constants subfunctions mainstmt;
+ 
+ //constants
+ constants = {someconstants} constants constant [type]:id [varname]:id assign orcond eol | {noconstants};
+ 
+ //other function definitions besides main
+ subfunctions = {subfunctionorsubfunctions} subfunctions subfunction| {noneone}; 
+ subfunction = id lparen defineargs rparen openbracket stmts closebracket ;
+ 
+ //main statement
+ mainstmt = main lparen rparen openbracket stmts closebracket;
+ 
+ // what statements are
+ stmts = {statementorstatements} stmts stmt | {nonetwo};
+ stmt = {assign} assignstmt | {decl} declarestmt | {fc} functioncall | {cond} condifstmt | {while} whilestmt;
+ 
+ //what arguments are
+ arguments = {multipleargs} arguments comma argument | {singlearg} argument | {nonethree} ;
+ argument = orcond;
+ 
+ defineargs = {multipledefineargs} defineargs comma definearg | {singledefinearg} definearg | {nonefour};
+ definearg = [type]:id [varname]:id;
+			
+ //if else statement and if statement
+ condifstmt = if lparen orcond rparen [ifbracketopen]:openbracket [resultone]:stmts [ifbracketclose]:closebracket condelsestmt;
+ 
+ condelsestmt = {condelsestmt} else [elsebracketopen]:openbracket [resulttwo]:stmts [elsebracketclose]:closebracket | {nonecond};
+ 
+ //while statement
+ whilestmt = while lparen orcond rparen openbracket stmts closebracket;
+ 
+ //or
+ orcond  = {orcondone}   orcond or andcond  | {passandcond}  andcond;
+ 
+ //and
+ andcond  = {andcondone}  andcond and condition  | {passcond} condition;
+ 
+ //comparisons equal, less than, greater than
+  condition = {equalitycomparison} [firstexpr]:expr equal [secondexpr]:expr |
+			{lesscond}  [firstexpr]:expr less [secondexpr]:expr  | 
+			{greatercond}  [firstexpr]:expr greater [secondexpr]:expr| 
+			{lesseqcond}  [firstexpr]:expr less_equal [secondexpr]:expr| 
+			{greatereqcond}  [firstexpr]:expr greater_equal [secondexpr]:expr |
+			{passtoexpr} expr;
+ 
+ //addition and subtraction
+ expr = {plus} expr plus expr2 | {minus} expr minus expr2 | {passtoexprtwo} expr2;
+ 
+ //multiplication and division
+ expr2 = {mult} expr2 mult expr3 | {divide} expr2 divide expr3| {passtoexprthree} expr3;
+ 
+ //exponents
+ expr3 = {exponent} expr3 exponential expr4 | {passtoexprfour} negation;
+ 
+ //negation
+ negation = {negation} minus notcond | {passtonotcond} notcond;
+ 
+  //not
+ notcond = {notcondone} not notcond | {passequalitycond} expr4;
+ 
+ //parentheses
+ expr4 = {parent} lparen orcond rparen | {singular} operand;
+ 
+ // what operands are
+ operand = {booloperand} boolean | {variableoperand} id | {stringoperand} string |{intoperand} integer | {floatoperand} float;
+ 
+ //declaration, assignment, functioncall statements
+ declarestmt = [type]:id [varname]:id eol;
+ assignstmt = id assign orcond eol;
+ functioncall = id lparen arguments rparen eol;
+ 
+
+
+
+ 
+
+ 
+ 
+

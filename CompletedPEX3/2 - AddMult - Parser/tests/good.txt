@@ -1,0 +1,32 @@
+const int q := 5;
+const int s := 6;
+const float r := 6.2;
+
+popcorn(int x, int c) {
+
+	float g;
+	g := 5.6;
+	g := r;
+	string hi;
+	hi := "hi";
+	c := 7;
+
+}
+
+// can't declare constants after first function :)
+//const string := "big oof";
+
+main() {
+	int x;
+	int y;
+	y := q + s;
+	x := y;
+	
+	popcorn(x, 7);
+	
+	x := 8;
+	y := 9;
+	
+	int z;
+	z := x + y;
+}

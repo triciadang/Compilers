@@ -1,0 +1,170 @@
+//final y x=z; - fails if x already declared
+const int a := 5;
+const string a := "Nick is a baller";
+	
+//final y x=z; - fails if y is not declared
+const badtype b:=6;
+	
+//final y x=z; - fails if y is declared, but not a type
+const int booty := 7;
+const booty b:=5;
+
+//final y x=z; - fails if types of y, z don’t match
+const float c := a;
+
+const int dd := 6;
+
+
+submetod_i(int o, float p, string q, bool r){
+}
+
+//Procedures: reports failure when procedure name already used
+submetod_i(int n){
+
+}
+	
+//Procedures: reports failure when formal parameter declared incorrectly (e.g. x x)
+submetod_ii(n n){
+
+}
+
+//Procedures: reports failure when formal parameter declared twice (e.g. int x, int x)
+submetod_iii(int n, int n){
+
+}
+
+main() {
+	int d;
+	
+	//y x; – fails if x already declared
+	float d;
+	
+	//y x; – fails if y is not declared
+	but ttt;
+	
+	//y x; – fails if y is declared, but not a type
+	string moist;
+	moist e;
+	
+	//if (Expr)… - fails if Expr is not Boolean
+	if (d+5){
+	
+	}
+	
+	if (true){}
+	else{
+		road := 5;
+	}
+	
+	
+	//while (Expr) … - fails if Expr is not Boolean
+	while (d*10){
+	
+	}
+	
+	//Expressions: - fails if type name used instead of variable name
+	int int;
+	float float;
+	string string;
+	
+	
+	//+,-,*,/ fail when types don’t match
+	int f;
+	f:=7;
+	float g;
+	g:=5.2;
+	
+	int h;
+	h := f+g;
+	h := g-f;
+	h := f*g;
+	h := g/f;
+
+	//+,-,*,/ fail when types aren’t integer or float
+	string i;
+	i := "Nick is the best partner";
+	bool j;
+	j := false;
+	
+	h := i+f;
+	h := f-i;
+	h := f*i;
+	h := i/f;
+	i := i+i;
+	
+	i := j+f;
+	i := j-f;
+	i := j*f;
+	i := j/f;
+	
+	//and or fail when types don’t match
+	bool k;
+	k := true;
+	k := k && h;
+	k := h && k;
+	k := k || h;
+	k := h || k;
+	
+	//and/or/not fail when types aren’t Boolean
+	k := f && f;
+	k := g && g;
+	k := h && h;
+	k := h || h;
+	k := i || i;
+	k := g || g;
+	k := !i;
+	k := !f;
+	k := !g;
+	
+	//<,<=,>,>=.=. fail when types don’t match
+	bool l;
+	l := f < g;
+	l := g > f;
+	l := i <= f;
+	l := g >= j;
+	l := i == f;	
+	
+	//<,<=,>,>=.=. fail when types aren’t integer or float
+	
+	l := i < i;
+	l := j <= j;
+	l := i > i;
+	l := j >= j;
+	l := i == j;
+	
+	//Assignment: x:=y fails when x is not declared
+	m := 5;	
+	
+	//Assignment: x:=y fails when x is declared, but not a variable
+	submetod_i := 6;
+	
+	//Assignment: x:=y fails when x is constant
+	dd := 4;
+	
+	//Assignment: x:=y fails when types don’t match
+	f := g;
+	f := i;
+	f := j;
+	i := j;
+	i := f;
+	i := g;
+	g := f;
+	g := i;
+	g := j;
+	
+	//x(y,z) : reports failure when x is not declared
+	nick_is_da_bomb_diggity();
+	
+	//x(y,z) : reports failure when x is declared, but not a procedure
+	i();
+	dd();
+	
+	//x(y,z) : reports failure when types of y,z don’t match formal parameters
+	submetod_i(3, 3.5, "nick is my friend", false);
+	submetod_i(3, 3, "nick is fun", false);
+	submetod_i(3, 3.5, 7, false);
+	submetod_i(3, 3.5, "nick likes tequila", "and tricia does too");
+	submetod_i(3,5, 3.5, 7, false);
+	submetod_i(3.5, 7, false);
+	
+}

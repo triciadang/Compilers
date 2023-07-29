@@ -1,0 +1,85 @@
+const int z:=9;
+const string thestring:="the";
+const string me:="me";
+const string biggerOof := thestring;
+
+hello(int x, int y){
+	x:=x+y;
+	y:=y+x;
+}
+
+hi(string x, float y){
+	x:="ilovemyself";
+	y:=-42.0;
+	string abc;
+}
+
+answertotheuniverse(string vara){
+	string varb;
+	string varc;
+	bool porcupine;
+	porcupine := true;
+	porcupine := false;
+	float a;
+	a:=42.0;
+	porcupine := a <= 5.0;
+	vara:="Documentation: Hitchhikers's guide";
+	varb:= "to the galaxy";
+	int ahhh;
+	ahhh := 0;
+	string answer;
+	
+	if (a>=42.0 || a<84.5){
+		answer:="correct";
+	}
+	else {
+		answer:="nein, try again";
+	}
+	
+	//conditional inside while loop
+	while ((z==9) && (a<=43.0)){
+		string sing;
+		sing:="na na na c'mon";
+		if (!(ahhh == 0)){
+			while (a>0.0){
+				varc:="dancing on rainbows";
+			}
+		}
+	}
+	if (true){
+	}
+	else{
+		int tricia;
+		tricia := 42;
+	}
+	
+	bool kevin;
+	kevin := false;
+	
+	while (!kevin){
+	}
+	
+	//while inside conditional
+	if (z>=1){
+		string oof;
+		oof:="na na na c'mon";
+		while (porcupine){
+			while (a>0.0){
+				varc:="dancing on rainbows";
+			}
+		}
+	}
+}
+
+main(){
+	float a;
+	string answer;
+	a:=42.0;
+	hello(z,5);
+	hello(2, 3);
+	hi("a",2.5);
+	answertotheuniverse("42");
+	float u;
+	u := -6.2*7.0;
+	
+}
