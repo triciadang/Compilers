@@ -1,0 +1,10 @@
+// this is a complex test
+
+int x;
+int y;
+int z;
+
+x := 7;
+y := 9;
+z := x + y;
+y := z * 25;

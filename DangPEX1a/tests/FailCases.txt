@@ -1,0 +1,46 @@
+// Bad integers
+32x3242
+0043324
+00
+32e9
+3.2E-9
+
+
+// Bad Floats
+32e98e2
+98.e7
+63e79.2
+43.3.
+2.3e--5
+
+
+// Bad Comments
+/ this isn't a comment
+/ this also isn't a comment /
+/* not a comment */
+
+// Bad operators
+$
+%
+&
+|
+~
+?
+
+// Bad IDs
+y98
+x__position
+_x_position
+
+// Bad Chars
+' '
+'abc'
+'AB'
+"A"
+""
+
+// Bad Quotes
+nope
+"Never ending quote
+
+

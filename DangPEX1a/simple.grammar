@@ -1,0 +1,78 @@
+// This is the language that we'll be developing as an example in class.
+Package ToyLanguage;
+
+Helpers
+	other = ' ' | 13 | 10;
+	natural = ['1' .. '9'];
+	whole = ['0' + natural];
+	letter = [['a' .. 'z'] + ['A' .. 'Z']];
+
+Tokens
+	// Operators and EOL
+	assign = ':=';
+	plus = '+';
+	mult = '*';	
+	minus = '-';
+	divide = '/';
+	
+	// Comparative Operators
+	equal = '==';
+	greater_equal = '>=';
+	less_equal = '<=';
+	greater = '>';
+	less = '<';
+	
+	// Logical Operators
+	and = '&&';
+	or = '||';
+	not = '!';
+	
+	constant = 'const';
+	if = 'if';
+	else = 'else';
+	while = 'while';
+	void = 'void';
+	l_parenth = '(';
+	r_parenth = ')';
+	
+	main = 'main';
+	
+
+	eol = ';';
+
+	// Variable Names
+	id = ((letter+)(('_')(letter+))*)*('_'?);
+	comment = '//' ([[0 .. 0xffff] - [10 + 13]])*;	
+	
+	// Literals
+	integer = '0' | natural (whole)*;
+	float = ('0'?)('.')(whole)*(('e'|'E')('-'?)(natural)(whole)*)?|(natural)(whole)* (('.')(natural)(whole)*)?(('e'|'E')('-'?)(natural)(whole)*)?;
+	string = ('"')(([[0 .. 0xffff] - 34])*('\"'))* ('"');
+	
+	// Whitespace
+	blank = other+;
+	
+Ignored Tokens
+	blank, comment;
+
+Productions
+
+	// Code Structure
+	program = stmts;
+	
+	stmts = {stmts_assignment} assignment | {stmts_xpr} expression | {stmts_functioncall} functioncall | {stmts_declaration} declaration;
+	// {stmts_conditional} conditional;
+	assignment = id assign expression eol;
+	functioncall = id l_parenth arguments r_parenth eol;
+	arguments = {int_arg} integer | {float_arg} float | {string_arg} string;
+	declaration = [type]:id [varname]:id eol;
+	
+	// Math expression area
+	
+	
+	
+	expression = {plus_multi_expr} expression plus multi_pass | {mult_expr} expression multi_pass | {minus_multi_expr} expression minus multi_pass | {plus_divis_expr} expression plus divis_pass | {divis_expr} expression divis_pass | {minus_divis_expr} expression minus divis_pass;
+	multi_pass = {multi_pass_mult} multi_pass mult simpleton | {multi_pass_simpleton} simpleton;
+	divis_pass = {divis_pass_divis} divis_pass divide simpleton | {divis_pass_simpleton} simpleton;
+	simpleton = {variable_simpleton} id | {integer_simpleton} integer | {float_simpleton} float;
+	

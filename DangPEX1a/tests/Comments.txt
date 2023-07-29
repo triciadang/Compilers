@@ -1,0 +1,3 @@
+//This is a comment. Anything can be put here @#$^@#^. Make sure to check Multi-line comments if you implement them.
+// this line should only be // one // comment
+// !@#$%^&*()QWERTYUIOPASDFGHJKLZXCBNM:<>?"{}+_

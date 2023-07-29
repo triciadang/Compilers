@@ -1,0 +1,6 @@
+C:\Users\C20Tricia.Dang\OneDrive - usafa.edu\C1C\Compilers\DangPEX1a\bin\Debug\ConsoleApplication.exe
+C:\Users\C20Tricia.Dang\OneDrive - usafa.edu\C1C\Compilers\DangPEX1a\bin\Debug\ConsoleApplication.pdb
+C:\Users\C20Tricia.Dang\OneDrive - usafa.edu\C1C\Compilers\DangPEX1a\obj\x86\Debug\Lexer.csproj.CoreCompileInputs.cache
+C:\Users\C20Tricia.Dang\OneDrive - usafa.edu\C1C\Compilers\DangPEX1a\obj\x86\Debug\ConsoleApplication.exe
+C:\Users\C20Tricia.Dang\OneDrive - usafa.edu\C1C\Compilers\DangPEX1a\obj\x86\Debug\ConsoleApplication.pdb
+C:\Users\C20Tricia.Dang\OneDrive - usafa.edu\C1C\Compilers\DangPEX1a\obj\x86\Debug\Lexer.csprojAssemblyReference.cache
